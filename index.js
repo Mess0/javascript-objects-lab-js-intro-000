@@ -16,6 +16,5 @@ var destructivelyUpdateObjectWithKeyAndValue = (object, key, value) => {
 }
 
 var destructivelyDeleteFromObjectByKey = (object, key) => {
-  return object[key];
-
+let destObjs =  object[key];
 }
