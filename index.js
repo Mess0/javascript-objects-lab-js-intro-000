@@ -16,6 +16,6 @@ var destructivelyUpdateObjectWithKeyAndValue = (object, key, value) => {
 }
 
 var destructivelyDeleteFromObjectByKey = (object, key) => {
-
+this.obj = obj
 return obj = object[key];
 }
