@@ -5,13 +5,13 @@ var updateObjectWithKeyAndValue = (object, key, value) => {
 }
 
 
-var destructivelyUpdateObjectWithKeyAndValue =(object, key, value) =>{
+var destructivelyUpdateObjectWithKeyAndValue = (object, key, value) => {
   object[key] = value;
   return object;
 }
-console.log(object);
-
 
 var deleteFromObjectByKey = (object, key) => {
-  delete object.key
+  var obj = Object.assign({}, object, key)
+  delete obj.key
+  return obj;
 }
